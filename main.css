@@ -2,6 +2,8 @@
 html {
   box-sizing: content-box;
   margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 .container {
@@ -67,6 +69,7 @@ html {
   display: flex;
   align-items: center;
   position: relative;
+  margin: 10px 0;
 }
 
 .filled-bar {
@@ -89,6 +92,7 @@ html {
 
 .space-words {
   display: flex;
+  justify-content: space-between;
 }
 
 .space-left {
@@ -96,9 +100,16 @@ html {
   background-color: #fff;
   color: hsl(229, 57%, 11%);
   padding: 20px;
-  top: -2rem;
+  top: -4rem;
   right: 2.5rem;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.space-left strong {
+  font-size: 36px;
+  margin-right: 10px;
 }
 
 .dialog {
@@ -106,6 +117,6 @@ html {
   clip-path: polygon(100% 0, 0 0, 100% 100%);
   padding: 15px;
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   right: 2.5rem;
 }
