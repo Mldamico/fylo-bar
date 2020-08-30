@@ -10,7 +10,7 @@ html {
   background-image: url('./assets/bg-desktop.png');
   background-repeat: no-repeat;
   background-position-y: bottom;
-  background-size: 100% auto;
+  background-size: 100% 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,8 @@ html {
   border-radius: 10px;
   padding: 40px;
   color: #fff;
+
+  position: relative;
 }
 
 .icons {
@@ -62,15 +64,16 @@ html {
   height: 15px;
   background-color: hsl(229, 57%, 11%);
   border-radius: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .filled-bar {
   width: 80%;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-  display: flex;
-  align-items: center;
-  height: 80%;
-  margin: 5px;
+  height: 70%;
+  margin-left: 3px;
   border-radius: 30px;
   position: relative;
 }
@@ -86,4 +89,23 @@ html {
 
 .space-words {
   display: flex;
+}
+
+.space-left {
+  position: absolute;
+  background-color: #fff;
+  color: hsl(229, 57%, 11%);
+  padding: 20px;
+  top: -2rem;
+  right: 2.5rem;
+  border-radius: 10px;
+}
+
+.dialog {
+  background-color: #fff;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  padding: 15px;
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
 }
