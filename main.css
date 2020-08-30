@@ -120,3 +120,32 @@ html {
   top: 0.5rem;
   right: 2.5rem;
 }
+
+@media (max-width: 400px) {
+  .container {
+    background-image: url('./assets/bg-mobile.png');
+    background-size: 100%;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-first {
+    width: 65%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .container-bar {
+    width: 70%;
+    margin: 0;
+  }
+
+  .dialog {
+    opacity: 0;
+  }
+
+  .space-left {
+    top: 9rem;
+    right: 6.5rem;
+  }
+}
